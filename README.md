@@ -6,13 +6,23 @@ Zręcznościowa gra przeglądarkowa w stylu pixel-art. Prowadzisz szereg bohater
 
 Otwórz `index.html` w przeglądarce (działa też na telefonie). Nie trzeba niczego instalować.
 
-- **Sterowanie:** strzałki / WASD, na telefonie przesuwanie palcem. `P` lub `Esc` to pauza, `M` wycisza dźwięk.
-- **Przegrana:** uderzenie w ścianę, w przeszkodę albo we własny szereg kończy wyprawę. Wyprawa kończy się też, gdy polegną wszyscy bohaterowie.
-- **Tempo:** drużyna przyspiesza z każdą falą.
+- **Sterowanie:** strzałki / WASD, na telefonie przesuwanie palcem. `Spacja` (przytrzymaj) to zryw, `R` zawraca szereg, `P` lub `Esc` pauza, `M` wycisza dźwięk. Na telefonie zryw i zawrót mają własne przyciski.
+- **Plansza:** duża, bez przeszkód, a kamera trzyma się przywódcy. Strzałki na krawędzi ekranu wskazują sztandar, złodzieja i strażnika.
+- **Zderzenia:** uderzenie w ścianę zabiera wojownika z końca szeregu, a drużyna sama skręca. Wjazd we własny szereg zabiera tylko tego wojownika, w którego trafił przywódca. Gdy przywódca jest sam, traci część zdrowia.
+- **Wrogowie** pojawiają się już w ruchu i stopniowo stają się widoczni. Półprzezroczystych można atakować, ale one jeszcze nie ranią.
 - **Sztandary:** na każdej fali pojawia się sztandar nowego śmiałka. Najedź na niego przywódcą, a bohater dołączy na końcu szeregu.
 - **Klejnoty** podnoszą poziom drużyny w trakcie wyprawy (więcej obrażeń i zdrowia).
 - **Monety** zostają po wyprawie. W obozie ulepszasz za nie każdego bohatera osobno (do poziomu 10), odblokowujesz przywódców i kupujesz wyposażenie.
 - **Co 5. fala** przychodzi strażnik krainy.
+
+## Mechaniki specjalne
+
+- **Zryw:** drużyna biegnie dwa razy szybciej, dopóki starcza sił. Siły odnawiają się same.
+- **Zawrót:** ogon staje się czołem szeregu (co 7 sekund).
+- **Seria:** szybkie zabójstwa mnożą punkty. Co 15 trafień wpadają złote klejnoty i krótki szał.
+- **Złodziej skarbów:** co jakiś czas pojawia się złoty goblin, który ucieka. Złapany sypie monetami i daje premię.
+- **Elitarni wrogowie:** więksi i złoci, mają więcej zdrowia, ale zawsze zostawiają premię.
+- **Bractwo:** każdy kolejny bohater tej samej klasy daje całej tej klasie +20% obrażeń.
 
 ## Krainy
 
@@ -41,6 +51,9 @@ Trudniejsze krainy dają więcej monet.
 
 ## Premie na mapie
 
-Mikstura (leczenie), Szał bojowy (podwójna szybkość ataku), Tarcza, Magnes, Bomba (rani wszystkich wrogów), Zamrożenie (wrogowie stają w miejscu) i Podwójne monety.
+- **Szał:** potrójna szybkość ataku.
+- **Magnes:** przez 10 sekund przyciąga klejnoty i monety z dużej odległości.
+- **Bomba:** niszczy wszystkich wrogów w dużym promieniu wokół przywódcy (strażnikom zabiera część zdrowia).
+- **Tarcza**, **Zamrożenie**, **Podwójne monety** i **Mikstura** leczącą drużynę.
 
 Postęp (monety, poziomy bohaterów, rekordy, odblokowane krainy) zapisuje się w pamięci przeglądarki. Cała grafika jest oryginalna i rysowana w kodzie.
